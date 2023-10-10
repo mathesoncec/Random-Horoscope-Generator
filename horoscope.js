@@ -17,7 +17,16 @@ const astroMessages = [
     "Adventure awaits! Be open to new experiences and ideas.",
     "Your disciplined approach will help you achieve your goals.",
     "Your innovative thinking will set you apart from the crowd.",
-    "Embrace your intuition; it will lead you in the right direction."
+    "Embrace your intuition; it will lead you in the right direction.",
+    "Stay patient and persistent; success is just around the corner.",
+    "It's a good day to connect with old friends and strengthen bonds.",
+    "Don't be afraid to seek advice from a mentor or trusted source.",
+    "Your financial situation is looking positive; make wise investments.",
+    "Focus on your health and well-being; prioritize self-care today.",
+    "Expect unexpected opportunities to come your way.",
+    "Your charisma will attract positive attention and opportunities.",
+    "Take time for introspection and personal growth.",
+    "Embrace change as a chance for personal transformation."
 ];
 
 // Function to generate a random message
