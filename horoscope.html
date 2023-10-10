@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horoscope Generator</title>
+    <script src ="horoscope.js"></script>
+</head>
+<body>
+    <h1>Horoscope Generator</h1>
+    <div id="horoscope"></div>
+
+    <script>
+        //Function to display generated message
+        function displayRandomMessage() {
+            const message = generateMessage();
+            const horoscopeElement = document.getElementById('horoscope');
+            horoscopeElement.textContent = ''; // Clear any previous content
+
+            // Split the message into lines and create separate <p> elements
+            const lines = message.split('\n');
+            for (const line of lines) {
+                const paragraph = document.createElement('p');
+                paragraph.textContent = line;
+                horoscopeElement.appendChild(paragraph);
+            }
+        }
+
+        //Will call displayRandomMessage when the page loads
+        displayRandomMessage();
+    </script>
+</body>
+</html>
