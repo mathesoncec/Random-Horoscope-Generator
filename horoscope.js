@@ -54,4 +54,4 @@ function generateMessage() {
     return `Your horoscope for ${randomSign}:\n${randomMessage1}\n${randomMessage2}\n${inspirationalQuote}`;
 }
 
-console.log(generateMessage())
+console.log(generateMessage());
