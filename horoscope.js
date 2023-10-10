@@ -20,4 +20,17 @@ const astroMessages = [
     "Embrace your intuition; it will lead you in the right direction."
 ];
 
-//
+// Function to generate a random message
+function generateMessage() {
+    const randomSign = zodiacSigns[Math.floor(Math.random() * zodiacSigns.length)];
+    const randomMessage1 = astroMessages[Math.floor(Math.random() * astroMessages.length)];
+    let randomMessage2 = astroMessages[Math.floor(Math.random() * astroMessages.length)];
+
+    if (randomMessage1 === randomMessage2) {
+        randomMessage2 = astroMessages[Math.floor(Math.random() * astroMessages.length)];
+    }
+
+    return `Your horoscope for ${randomSign}:\n${randomMessage1}\n${randomMessage2}`;
+}
+
+console.log(generateMessage())
