@@ -29,17 +29,29 @@ const astroMessages = [
     "Embrace change as a chance for personal transformation."
 ];
 
+// Define an array of inspirational quotes
+const inspirationalQuotes = [
+    "Believe you can and you're halfway there. -Theodore Roosevelt",
+    "The only way to do great work is to love what you do. -Steve Jobs",
+    "In the middle of every difficulty lies opportunity. -Albert Einstein",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts. -Winston Churchill",
+    "The best way to predict the future is to create it. -Peter Drucker",
+    "Hardships often prepare ordinary people for an extraordinary destiny. -C.S. Lewis",
+    "The only limit to our realization of tomorrow will be our doubts of today. -Franklin D. Roosevelt"
+];
+
 // Function to generate a random message
 function generateMessage() {
     const randomSign = zodiacSigns[Math.floor(Math.random() * zodiacSigns.length)];
     const randomMessage1 = astroMessages[Math.floor(Math.random() * astroMessages.length)];
     let randomMessage2 = astroMessages[Math.floor(Math.random() * astroMessages.length)];
+    const inspirationalQuote = inspirationalQuotes[Math.floor(Math.random() * inspirationalQuotes.length)];
 
     if (randomMessage1 === randomMessage2) {
         randomMessage2 = astroMessages[Math.floor(Math.random() * astroMessages.length)];
     }
 
-    return `Your horoscope for ${randomSign}:\n${randomMessage1}\n${randomMessage2}`;
+    return `Your horoscope for ${randomSign}:\n${randomMessage1}\n${randomMessage2}\n${inspirationalQuote}`;
 }
 
 console.log(generateMessage())
